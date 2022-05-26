@@ -236,4 +236,7 @@
     }
   }
   
+  .list-unstyled li {
+      margin-bottom: 1rem;
+  }
     
