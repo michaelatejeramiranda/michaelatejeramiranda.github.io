@@ -1,0 +1,239 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    mix-blend-mode: lighten;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: 100ms ease-out;
+    z-index: 3;
+}
+*/
+
+.main-site .site-banner {
+    position: relative;
+    height: 100vh;
+    background-color: #95B594;
+}
+
+.main-site .site-banner .personal {
+    height: 90vh;
+    width: 50vw;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    
+}
+
+.main-site .site-banner .personal img {
+    height: 100%;
+    width: auto;
+    user-select: none;
+}
+
+.header_area .main_menu .navbar .container-fluid .navbar-brand {
+    padding: 0rem 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Roboto', cursive;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.header_area .main_menu .navbar .container-fluid .navbar-brand:hover {
+    color: #fff;
+}
+
+.header_area .main_menu .navbar {
+    padding: 1rem 1rem;
+}
+
+.header_area .main_menu .navbar .container-fluid .nav-item .nav-link {
+    font-family: 'Roboto', cursive;
+    color: #DFE8DE;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1.3rem;
+}
+
+.header_area .main_menu .navbar .container-fluid .navbar-nav .nav-item .active {
+    color: #000000;
+}
+
+.header_area .main_menu .navbar .container-fluid .navbar-nav .nav-item .nav-link {
+    position: relative;
+    transition: all 0.2s ease 0s;
+}
+
+.header_area .main_menu .navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
+    color: #000000;
+}
+
+.offcanvas .offcanvas-header {
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #000000;
+}
+
+.attract-hover-easing {
+    transition: all 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+    
+
+.main-site .site-banner .fname {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    transform: translate(0, -15%);
+    background-color: transparent;
+    width: 50vw;
+    height: fit-content;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main-site .site-banner .fname .track {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.main-site .site-banner .fname .track h1 {
+    font-size: 200px;
+    letter-spacing: 1.5vw;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    opacity: 0.5;
+    user-select: none;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    
+}
+
+.main-site .site-banner .fname:hover .track h1 {
+    opacity: 1;
+    animation-play-state: paused;
+}
+  
+.main-site .site-banner .lname {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    width: 50vw;
+    height: fit-content;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main-site .site-banner .lname .track {
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.main-site .site-banner .lname .track h1 {
+    font-size: 200px;
+    letter-spacing: 1.5vw;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    opacity: 0.5;
+    user-select: none;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    
+}
+
+.move_name {
+    animation: marquee1 20s linear infinite;
+    transition: marquee1 0.2 ease-out;
+}
+
+@keyframes marquee1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+.name-scroll {
+    animation: marquee3 10s linear infinite;
+}
+
+@keyframes marquee3 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+.main-site .site-banner .lname:hover .track h1 {
+    opacity: 1;
+    animation-play-state: paused;
+}
+
+.main-site .projects {
+    height: 100vh;
+}
+
+
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+
+    .main-site .site-banner .personal {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .main-site .site-banner .personal img {
+        height: 90%;
+        width: auto;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .header_area .main_menu .navbar {
+        padding: 1rem 0rem;
+    }
+
+    .header_area .main_menu .navbar .container-fluid .navbar-brand {
+        padding: 0rem;
+    }
+
+    .main-site .site-banner .lname {
+        visibility: hidden;
+    }
+
+    .main-site .site-banner .fname {
+        width: 100vw;
+        overflow: hidden;
+    }
+  }
+  
+    
