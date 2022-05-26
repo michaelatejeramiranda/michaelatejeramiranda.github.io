@@ -1,0 +1,55 @@
+.mainsite .first-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+}
+
+.mainsite .first-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.mainsite .first-section #myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.mainsite .first-section .container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 3;
+}
+
+.mainsite .first-section .container h1 {
+  font-family: 'Ingrid Darling', cursive;
+  font-size: 10rem;
+  user-select: none;
+}
+
+.mainsite .first-section .container p {
+  font-family: 'Spectral', serif;
+  font-size: 2.5rem;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .mainsite .first-section .container h1 {
+    font-size: 17rem;
+  }
+}

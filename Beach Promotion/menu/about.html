@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/menu.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Spectral&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <title>Colibra Island</title>
+    <link rel="icon" href="../images/logo.png" type="image/icon type">
+
+</head>
+<style>
+
+#map {
+  height: 500px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+  
+</style>
+<body style="background-color: #ffffff;">
+    <header>
+        <nav class="navbar navbar-light fixed-top" id="myNavbar" style="background-color: #000000;">
+            <div class="container-fluid">
+              <h6 class="hide">
+                <svg class="d-inline-block align-center" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-globe" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                </svg>
+                <span>Philippines</span>
+              </h6>
+              <a class="navbar-brand" href="#">Collibra Island</a>
+              <button class="mybtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header align-items-center">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Colibra Island</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p class="text-start text-secondary pb-1" >Navigation</p>
+                  <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 last">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                  </ul>
+                  <p class="text-start text-secondary pt-3">Socials</p>
+                  <div class="d-flex justify-content-evenly">
+                    <a href="">
+                      <i class="bi-facebook" style="font-size: 2.5rem; color: black;"></i>  
+                    </a>
+                    <a href="">
+                      <i class="bi-twitter" style="font-size: 2.5rem; color: black;"></i>  
+                    </a>
+                    <a href="">
+                      <i class="bi-instagram" style="font-size: 2.5rem; color: black;"></i> 
+                    </a>
+                    <a href="">
+                      <i class="bi-linkedin" style="font-size: 2.5rem; color: black;"></i>  
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="main" data-scroll-container style="padding-top: 150px;">
+      <section data-scroll-section>
+        <div class="container pb-5">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="row">
+                <h1 class="display-5">Collibra Island</h1>
+                <p class="lead pt-3">Situated off the coast of Barangay Tambobong in Dasol, Colibra Island or Camaso Island is a tiny and rocky islet surrounded with cream sand and turquoise water… so small that one can tour it in fifteen minutes or less.</p>
+                <p class="lead">The southern coast is covered with rocks and uplifted corals while the rest is surrounded with cream sand. Locals called the island as Colibra/Culebra or Snake Island because of abundance of sea snakes particularly on the rocky part of the island.</p>
+                <p class="lead">The island is flat and dry, making it hard for freshwater-dependent trees to survive. There used to be five coconut trees there but now down to none. There are patches of smaller plants around but its entirety is unshaded.</p>
+              </div>
+              <div class="row-md">
+                <img class="img-fluid rounded" src="../images/beach17.jpg" alt="">
+              </div>
+              <div class="row">
+                <p class="lead pt-3 display-4">Tips on going to Collibra Island</p>
+                <ul class="list-bullet lead d-grid gap-3 pt-3">
+                  <li>The ideal time to leave Manila is from midnight to early morning in order to arrive in Tambobong before lunch.</li>
+                  <li>A direct air-conditioned bus to Burgos and Dasol leaves Victory Liner Cubao terminal at 12 Midnight. This is a Sta. Cruz, Zambales bound bus via Alaminos, Pangasinan. If you miss this bus, the next trip to Sta. Cruz via Alaminos would be at 430 in the morning.</li>
+                  <li>There are jeepneys from Alaminos that goes directly to Tambobong via Burgos. Although there are only less than 10 jeepneys with unpredictable schedule</li>
+                  <li>It would be better to get the contact number of the trike driver so you can contact them if there is no more jeepneys or trike around on your return</li>
+                  <li>There is mobile signal in Tambobong and Colibre Island</li>
+                  <li>There is no electricity and water source in Culebra Island</li>
+                  <li>Camping is allowed in Colibra Island</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <div class="rounded" id="map"></div>
+              </div>
+              <div class="row">
+                <p class="lead pt-3 display-4">How to Get to Colibra Island from Manila</p>
+                <p class="lead">Ride a bus (First North Luzon Transit, Victory Liner, Dagupan Bus, Five Star) from Cubao or Pasay to Alaminos, fare ranges from P380 to P400 and travel time is at least four and a half hour.</p>
+                <p class="lead">From Alaminos, transfer to a local bus to Sta. Cruz or Iba and get off at the junction to Tambobong in Dasol, fare is P39 and travel time is around 45 minutes. You may also catch a bus going to Sta. Cruz via Alaminos and get off straight at the Tambobong Junction although this trip/route is limited.</p>
+                <p class="lead">From the junction, flag a trike to take you to Tambobong Beach at P300/trike maximum of four passengers. At Tambobong Beach, boats are readlily available at P800 round trip, good for three, inclusive of docking fee of P100.</p>
+                <p class="lead">If you are in Barangay Cabongaoan, you may also charter a boat to Colibra there albeit a little expensive and travel time takes a little longer than if coming from Barangay Tambobong. Alternatively, you may flag a tricycle from there or hitch to vehicles going to Tambobong. Trike rate starts at P100 one-way, maximum of three, travel time is 15 to 20 minutes.</p>
+              </div> 
+              <div class="row-md">
+                <img class="img-fluid rounded" src="../images/guide.jpg" alt="">
+              </div>            
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-light text-center text-lg-start" data-scroll-section>
+        <div class="text-center p-3" style="background-color: rgb(0, 0, 0);color: #ffffff;">
+          © 2022 Copyright: Michael A. Miranda
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script/plugins/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="../script/index.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer>
+    </script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Collira Island
+        const colibra_island = { lat: 15.881246370949297, lng: 119.77791664720255 };
+        // The map, centered at Collira Island
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: colibra_island,
+        });
+        // The marker, positioned at Collira Island
+        const marker = new google.maps.Marker({
+          position: colibra_island,
+          map: map,
+        });
+      }
+
+      window.initMap = initMap;
+    </script>
+
+</body>
+</html>
