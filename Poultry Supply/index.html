@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style/menu.css">
+    <link rel="stylesheet" href="/style/base.css">
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl.theme.default.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Roboto:wght@300&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+  
+    <title>The PawShop</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#myNavbar" data-bs-offset="150" class="scrollspy-example" tabindex="0">
+
+  <div id="onSale" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h1 class="display-3 d-inline-flex fw-bold">20% OFF</h1>
+                  <h3 class="display-6">NEW USER PROMO</h3>
+                  <p class="lead">Add your Email to receive your new user coupon right away!</p>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control" placeholder="Email"/> 
+                    <button type="submit" class="btn btn-dark form-control my-3 fs-6 py-2">Give me 20% off</button>
+                  </form>
+                </div>
+                <div class="col-lg-6 text-end d-flex align-items-center">
+                  <img src="/images/sale.jpg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="login" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 2;"></button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 d-flex align-items-center" style="background-color: #fff;">
+                  <img src="/images/pet-login.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 position-relative">
+                  <div class="position-absolute bottom-0 start-0 ms-2">
+                    <a href="" class="text-dark me-1" style="font-size: small;text-decoration: none;">Terms & Conditions</a>
+                    <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Privacy Policy</a>
+                  </div>
+                  <div class="row justify-content-center pt-5">
+                    <img src="/images/logo.png" class="img-fluid" style="width: 5rem;" alt="">
+                  </div>
+                  <div class="row text-center pt-1">
+                    <h1 class="fs-5">The PawShop</h1>
+                  </div>
+                  <div class="row text-center pt-5">
+                    <p class="fs-6 text-BLACK">Sign in To Continue</p>
+                  </div>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control my-3" placeholder="Email"/> 
+                    <input type="password" id="form4Example2" class="form-control" placeholder="Password"/> 
+                    <div class="form-check d-flex justify-content-between">
+                      <div class="d-flex justify-content-start">
+                        <input class="form-check-input" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label ms-2" style="font-size: small;" for="form4Example4">
+                          Remember Me
+                        </label>
+                      </div>
+                      <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-dark form-control my-3 fs-6 py-2">LOGIN</button>
+                  </form>
+                  <div class="row text-center mb-5">
+                    <a href="" class="text-dark fs-6" style="text-decoration: none;" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#signUp">CREATE AN ACCOUNT</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="signUp" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 2;"></button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 d-flex align-items-center" style="background-color: #fff;">
+                  <img src="/images/dog-signup.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 position-relative">
+                  <div class="position-absolute bottom-0 start-0 ms-2">
+                    <a href="" class="text-dark me-1" style="font-size: small;text-decoration: none;">Terms & Conditions</a>
+                    <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Privacy Policy</a>
+                  </div>
+                  <div class="row justify-content-center pt-5">
+                    <img src="/images/logo.png" class="img-fluid" style="width: 5rem;" alt="">
+                  </div>
+                  <div class="row text-center pt-1">
+                    <h1 class="fs-5">The PawShop</h1>
+                  </div>
+                  <div class="row text-center pt-2">
+                    <p class="fs-6 text-BLACK">Sign Up To Continue Shopping</p>
+                  </div>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control mt-3" placeholder="Email"/> 
+                    <input type="password" id="form4Example2" class="form-control my-3" placeholder="Password"/> 
+                    <input type="password" id="form4Example2" class="form-control" placeholder="Repeat Password"/> 
+                    <div class="form-check d-flex justify-content-between">
+                      <div class="d-flex justify-content-start">
+                        <input class="form-check-input" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label ms-2" style="font-size: small;" for="form4Example4">
+                          Remember Me
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark form-control my-3 fs-6 py-2">SIGN UP</button>
+                  </form>
+                  <div class="row text-center">
+                    <a href="" class="text-dark fs-6" style="text-decoration: none;" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#login">ALREADY HAVE AN ACCOUNT</a>
+                  </div>
+                  <div class="row mb-5 pt-4">
+                    <p style="font-size: small;">Or you can join with</p>
+                    <div class="d-flex justify-content-around">
+                      <a href="">
+                        <i class="bi-facebook" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                      <a href="">
+                        <i class="bi-twitter" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                      <a href="">
+                        <i class="bi-google" style="font-size: 2rem; color: black;"></i> 
+                      </a>
+                      <a href="">
+                        <i class="bi-linkedin" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="myNavbar">
+        <div class="container-fluid py-lg-3">
+          <a class="navbar-brand ps-lg-5 display-lg-1">The PawShop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="toTop" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact us</a>
+              </li>
+            </ul>
+            <div class="d-flex pe-lg-5 ms-lg-5">
+                <a role="button" class="p-0 m-0" data-bs-toggle="modal" data-bs-target="#login">
+                  <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login" class="bi-person-circle me-3" style="font-size: 2rem; color: #000;cursor: pointer;"></i>
+                </a>              
+                <a data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="p-0 m-0" style="position: relative;">
+                  <i class="bi-cart-fill" style="font-size: 2rem; color: #000;"></i>
+                  <span id="itemCount" class="total-count"></span>  
+                </a>
+                <div class="offcanvas offcanvas-end" data-bs-backdrop="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h2 id="offcanvasRightLabel" class="fw-bold">CART</h2>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="container-fluid" style="background-color: #000;">
+                    <p class="text-white fs-4 pt-2">Free shipping with a minimum purchase of 5 different items!</p>
+                  </div>
+                  <div class="offcanvas-body show-cart">
+                    
+                  </div>
+                  <div class="offcanvas-footer p-3 ">
+                    <div class="d-flex justify-content-between">
+                      <p class="fw-bold fs-5">ESTIMATED TOTAL</p>
+                      <p class="fw-bold fs-5 total-cart"></p>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-dark form-control py-2 fs-4" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-toggle="modal" data-bs-target="#login">CHECK OUT</button>
+                  </div>
+                </div>             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section id="home">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-7 col-md-12">
+                <h1 class="headline ps-lg-5">A Great pet Deserves a Great Food</h1>
+                <p class="message ps-lg-5">
+                  Your pets are the heart of our business. So we ensure that we provide only the best and healthy foods for your best friend.
+                </p>      
+                <div class="d-grid d-md-flex justify-content-md-start pt-1 ps-lg-5">
+                  <a href="#products">
+                    <button class="btn btn-outline-dark" >VIEW SHOP</button>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <img src="/images/food.png" class="img-fluid">
+              </div>
+            </div>
+          </div>  
+        </section>
+        <section id="products" class="pt-lg-5">
+          <div class="container" style="background-color: #ffffff;">
+            <div class="row pt-lg-5">
+              <h1 class="display-2 text-center text-BLACK pt-lg-5">OUR PRODUCTS</h1>
+            </div>
+            <div class="row">
+              <ul class="d-inline-lg-flex justify-content-lg-between list-unstyled py-3 col-lg-8">
+                <li class="btn btn-outline-dark m-3 filter active" data-filter="all">ALL</li>
+                <li class="btn btn-outline-dark m-3 filter" data-filter="dry-foods">DRY FOODS</li>
+                <li class="btn btn-outline-dark m-3 filter" data-filter="wet-foods">WET FOODS</li>
+                <li class="btn btn-outline-dark m-3 filter" data-filter="supplies">SUPPLIES</li>
+                <li class="btn btn-outline-dark m-3 filter" data-filter="shampoo-soap">SHAMPOO AND SOAP</li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image dry-foods">
+                  <div class="container-img">
+                    <img src="/images/food1.jpg" class="card-img-top img-fluid" alt="">
+                  </div>                
+                  <div class="card-body">
+                    <h5 class="card-title">Special Dog</h5>
+                    <p class="card-text">Php 980.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart" data-name="Special Dog" data-image="/images/food1.jpg" data-price="980">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image dry-foods">
+                  <div class="container-img">
+                    <img src="/images/food2.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pedigree (Adult)</h5>
+                    <p class="card-text">Php 980.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart" data-name="Pedigree (Adult)" data-image="/images/food2.jpg" data-price="980">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image dry-foods">
+                  <div class="container-img">
+                    <img src="/images/food3.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Royal Canin (Starter)</h5>
+                    <p class="card-text">Php 980.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart" data-name="Royal Canin (Starter)" data-image="/images/food3.jpg" data-price="980">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image dry-foods">
+                  <div class="container-img">
+                    <img src="/images/food4.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Alpo</h5>
+                    <p class="card-text">Php 980.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart" data-name="Alpo" data-image="/images/food4.jpg" data-price="980">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image wet-foods">
+                  <div class="container-img">
+                    <img src="/images/food6.png" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pedigree</h5>
+                    <p class="card-text">Php 150.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Pedigree" data-image="/images/food6.png" data-price="150" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image wet-foods">
+                  <div class="container-img">
+                    <img src="/images/food7.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cesar</h5>
+                    <p class="card-text">Php 80.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Cesar" data-image="/images/food7.jpg" data-price="80" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image wet-foods">
+                  <div class="container-img">
+                    <img src="/images/food8.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Royal Canin</h5>
+                    <p class="card-text">Php 350.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Royal Canin" data-image="/images/food8.jpg" data-price="350" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image wet-foods">
+                  <div class="container-img">
+                    <img src="/images/food9.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Aozi</h5>
+                    <p class="card-text">Php 80.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Aozi" data-image="/images/food9.jpg" data-price="80" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image supplies">
+                  <div class="container-img">
+                    <img src="/images/supply1.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bath Massage</h5>
+                    <p class="card-text">Php 150.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Bath Massage" data-image="/images/supply1.jpg" data-price="150" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image supplies">
+                  <div class="container-img">
+                    <img src="/images/supply2.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Dog Bowl Slow Feeder</h5>
+                    <p class="card-text">Php 200.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Dog Bowl Slow Feeder" data-image="/images/supply2.jpg" data-price="200" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image supplies">
+                  <div class="container-img">
+                    <img src="/images/supply4.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Pet Carrier</h5>
+                    <p class="card-text">Php 500.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Pet Carrier" data-image="/images/supply4.jpg" data-price="500" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image supplies">
+                  <div class="container-img">
+                    <img src="/images/supply5.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Paw Cleaner</h5>
+                    <p class="card-text">Php 300.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Paw Cleaner" data-image="/images/supply5.jpg" data-price="300" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image shampoo-soap">
+                  <div class="container-img">
+                    <img src="/images/soap2.jpg" class="card-img-top img-fluid" alt="">
+                  </div>                
+                  <div class="card-body">
+                    <h5 class="card-title">Lori Soap</h5>
+                    <p class="card-text ">Php 200.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Lori Soap" data-image="/images/soap2.jpg" data-price="200" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image shampoo-soap">
+                  <div class="container-img">
+                    <img src="/images/soap3.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Saint Roche Soap</h5>
+                    <p class="card-text">Php 350.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Saint Roche Soap" data-image="/images/soap3.jpg" data-price="350" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image shampoo-soap">
+                  <div class="container-img">
+                    <img src="/images/shampoo1.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Vitality Shampoo</h5>
+                    <p class="card-text">Php 300.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Vitality Shampoo" data-image="/images/shampoo1.jpg" data-price="300" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card border-0 mb-2 image shampoo-soap">
+                  <div class="container-img">
+                    <img src="/images/shampoo2.jpg" class="card-img-top img-fluid" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Saint Roche Shampoo</h5>
+                    <p class="card-text">Php 300.00</p>
+                    <div class="d-flex justify-content-between add-container">
+                      <a data-name="Saint Roche Shampoo" data-image="/images/shampoo2.jpg" data-price="300" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight" class="btn btn-outline-dark add-to-cart ">ADD TO CART</a>
+                      <div class="qtySelector d-flex justify-content-between">
+                        <i class="bi-dash decreaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                        <input type="text" class="qtyValue text-center px-1 mx-2 rounded" value="1" size="1" style="border: 1px solid #000;"/>
+                        <i class="bi-plus increaseQty" style="font-size: 1.5rem; color: #000;cursor: pointer;"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section  id="about" class="pt-5">
+          <div class="container-fluid" style="background-color: #ffffff;">
+            <div class="row pt-lg-5">
+              <h1 class="display-2 text-center text-BLACK pt-lg-5">ABOUT US</h1>
+              <div class="col-lg-8">
+                <h1 class="display-5 text-start text-BLACK pt-lg-5 pb-lg-3 ps-lg-5">
+                  Dogs bring out the good in us.
+                  The PawShop brings out the good in them.
+                  Feed the Good.
+                </h1>
+                <p class="lead ps-lg-5">
+                  The PawShop believes that the lovable innocence found in every dog helps us reconnect 
+                  with our true selves and teaches us valuable life lessons. Simply put, dogs make us better people. 
+                  And that has a profound impact on the world in which we live.
+                  That's why it's so important to us to ensure we feed the good in every dog.
+                </p>
+                <p class="lead ps-lg-5">
+                  The PawShop dry and wet dog food and treats encourage, support, fortify and fuel a dog's power 
+                  to be their healthiest and happiest selves at every stage of life — puppy, adult and senior.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <img src="/images/dog.jpg" class="img-fluid pt-5">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">             
+                <img src="/images/cat.jpg" class="img-fluid pt-5">
+              </div>
+              <div class="col-lg-8">
+                <p class="lead pe-lg-5 pt-lg-5">No matter how you're feeling, a little pet gonna love you.</p>
+                <p class="lead pe-lg-5 pt-lg-1">Our deep understanding of the needs of cats and dogs is what makes it possible for us to make the world's most precise pet health nutrition. We never stop learning and never take anything for granted. That’s why we collaborate with leading scientific, veterinary and behavioral experts, and maintain an ongoing dialogue with cat and dog owners worldwide.</p>
+                <p class="lead pe-lg-5 pt-lg-2">Our approach to sustainability ensures we show pets, people and the planet the respect they deserve. Nutritional quality and product safety sit at the heart of everything we do worldwide. Over the last five decades The PawShop have put nutritional quality and product safety at the heart of our operations worldwide. This attention to the very smallest details helps us deliver the most precise and effective health nutrition for pets.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="pt-5">
+          <div class="container pb-5">
+            <div class="row text-center pb-5 pt-lg-5">
+              <h1 class="title display-3 pt-lg-5">CONTACT US</h1>
+              <p class="fw-5">Have any question about our store? Please send us a message below.</p>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-lg-6 thumbnail mb-4 mb-lg-0">
+                <div class="border border-secondary p-5 pb-2 rounded">
+                  <div class="pb-5 d-flex justify-content-around">
+                    <h3>Send us a message
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>
+                    </h3>
+                  </div>            
+                  <form>
+                    <div class="form-outline mb-4">                 
+                      <label class="form-label" for="form4Example1">Name</label>
+                      <input type="text" id="form4Example1" class="form-control" placeholder="Enter your name"/>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form4Example2">Email address</label>
+                      <input type="email" id="form4Example2" class="form-control" placeholder="Enter your email"/>                  
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form4Example3">Message</label>
+                      <textarea class="form-control" id="form4Example3" rows="5" placeholder="Enter your message here"></textarea>               
+                    </div>
+                    <div class="form-check d-flex justify-content-start mb-4">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                      <label class="form-check-label" for="form4Example4">
+                        Send me a copy of this message
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mb-4 px-4 form-control">SEND</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="embed-responsive h-100">
+                  <iframe class="embed-responsive-item rounded border border-dark " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.4320760388807!2d121.08500733938294!3d14.55752353042866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7d3f3a7b79d%3A0x545213b206969031!2sR%20Cruz%2C%20Pasig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1652341526631!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>    
+            </div>  
+            <div class="row align-items-center">
+              <h2 class="pt-5 display-6 text-center">Get in touch</h2>
+              <p class="fw-5 text-center">Want to get in touch? We'd love to hear from you. Here's how to reach us.</p>
+              <div class="col-lg-5 col-md-10 col-sm-10 mx-auto">
+                <div class="d-flex justify-content-between">
+                  <a href="">
+                    <i class="bi-facebook" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                  <a href="">
+                    <i class="bi-twitter" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                  <a href="">
+                    <i class="bi-instagram" style="font-size: 2.5rem; color: black;"></i> 
+                  </a>
+                  <a href="">
+                    <i class="bi-linkedin" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>     
+      </main>
+      <footer class="text-center text-lg-start" style="background-color: #000;">
+        <section class="">
+          <div class="container text-center text-md-start">
+            <div class="row py-5">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto my-auto text-center">
+                <img src="/images/logo.png" class="img-fluid" alt="" width="50%">
+                <h6 class="text-white fw-3 fs-4">
+                  The PawShop
+                </h6>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h6 class="text-white fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="#!" class="text-white text-decoration-none">Dry Foods</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white text-decoration-none">Wet Foods</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white text-decoration-none">Pet Supplies</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white text-decoration-none">Soap & Shampoo</a>
+                </p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h6 class="text-white mb-4">
+                  Navigation
+                </h6>
+                <p>
+                  <a href="#!" class="text-white text-decoration-none">HOME</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white text-decoration-none">PRODUCTS</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white text-decoration-none">ABOUT US</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-white text-decoration-none">CONTACT US</a>
+                </p>
+              </div>
+
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
+                <h6 class="text-white mb-4">Get the latest news & promos</h6>
+                <form action="" method="post">
+                  <input type="email" id="form4Example2" class="form-control" placeholder="Email"/> 
+                  <button type="submit" class="btn btn-light fw-bold fs-6 form-control my-3 fs-6 py-2">SUBSCRIBE</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="py-2 fs-6" style="background-color: #fff;color: #000;">
+          <div class="container">
+            <div class="row ">
+              <div class="col-lg-6 text-center">
+                Website created by:
+              <a class="text-reset fs-6" href="https://www.facebook.com/michael.miranda.5245961/">Michael Miranda</a>
+              </div>
+              <div class="col-lg-6 text-center">
+                © 2022 Copyright:
+              <a class="text-reset fs-6" href="">The PawShop</a>
+              </div>
+            </div>
+          </div>         
+        </div>
+      </footer>
+      
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+</script>
+<script src="/script/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style/menu.css">
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl.theme.default.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Montserrat+Alternates:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+    <title>cloudboX</title>
+    <link rel="icon" href="/images/logo.png" type="image/icon type">
+
+</head>
+<body>
+
+  <div id="login" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 2;"></button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3 class="headline display-4">Hello,</h3>
+                  <h3 class="headline display-5 text-end">WELCOME BACK</h3>
+                  <img src="../images/login.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 position-relative pb-5">
+                  <div class="position-absolute bottom-0 start-0 ms-2">
+                    <a href="" class="text-dark me-1" style="font-size: small;text-decoration: none;">Terms & Conditions</a>
+                    <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Privacy Policy</a>
+                  </div>
+                  <div class="row justify-content-center pt-5">
+                    <img src="/images/logo.png" class="img-fluid" style="width: 5rem;" alt="">
+                  </div>
+                  <div class="row text-center pt-1">
+                    <h1 class="fs-5 footer-title">cloudboX</h1>
+                  </div>
+                  <div class="row text-center pt-3">
+                    <p class="fs-6 text-BLACK">Sign in To Continue</p>
+                  </div>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control my-3" placeholder="Email"/> 
+                    <input type="password" id="form4Example2" class="form-control" placeholder="Password"/> 
+                    <div class="form-check d-flex justify-content-between">
+                      <div class="d-flex justify-content-start">
+                        <input class="form-check-input" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label ms-2" style="font-size: small;" for="form4Example4">
+                          Remember Me
+                        </label>
+                      </div>
+                      <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-control my-3 fs-6 py-2">LOGIN</button>
+                  </form>
+                  <div class="row text-center mb-5">
+                    <a href="" class="text-dark fs-6" style="text-decoration: none;" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#signUp">CREATE AN ACCOUNT</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="signUp" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 2;"></button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3 class="headline display-4 pt-2">Join Us Now</h3>
+                  <p class="lead pt-3">Something big is coming on your way. Join us to get the latest updates as soon as they're released.</p>
+                  <img src="../images/signup2.svg" alt="" class="img-fluid mt-5">
+                </div>
+                <div class="col-lg-6 position-relative">
+                  <div class="position-absolute bottom-0 start-0 ms-2">
+                    <a href="" class="text-dark me-1" style="font-size: small;text-decoration: none;">Terms & Conditions</a>
+                    <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Privacy Policy</a>
+                  </div>
+                  <div class="row justify-content-center pt-5">
+                    <img src="/images/logo.png" class="img-fluid" style="width: 5rem;" alt="">
+                  </div>
+                  <div class="row text-center pt-1">
+                    <h1 class="fs-5 footer-title">cloudboX</h1>
+                  </div>
+                  <div class="row text-center pt-2">
+                    <p class="fs-6 text-BLACK">Sign Up To Continue Shopping</p>
+                  </div>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control mt-3" placeholder="Email"/> 
+                    <input type="password" id="form4Example2" class="form-control my-3" placeholder="Password"/> 
+                    <input type="password" id="form4Example2" class="form-control" placeholder="Repeat Password"/> 
+                    <div class="form-check d-flex justify-content-between">
+                      <div class="d-flex justify-content-start">
+                        <input class="form-check-input" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label ms-2" style="font-size: small;" for="form4Example4">
+                          Remember Me
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-control my-3 fs-6 py-2">SIGN UP</button>
+                  </form>
+                  <div class="row text-center">
+                    <a href="" class="text-dark fs-6" style="text-decoration: none;" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#login">ALREADY HAVE AN ACCOUNT</a>
+                  </div>
+                  <div class="row mb-5 pt-4">
+                    <p style="font-size: small;">Or you can join with</p>
+                    <div class="d-flex justify-content-around">
+                      <a href="">
+                        <i class="bi-facebook" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                      <a href="">
+                        <i class="bi-twitter" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                      <a href="">
+                        <i class="bi-google" style="font-size: 2rem; color: black;"></i> 
+                      </a>
+                      <a href="">
+                        <i class="bi-linkedin" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" id="myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-lg-5 display-lg-1" href="index.html">cloudboX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active-menu" href="#">Contact us</a>
+              </li>
+            </ul>
+            <div class="d-flex pe-lg-5 ms-lg-2">
+                <button class="btn btn-outline-primary me-3" data-bs-toggle="modal" data-bs-target="#login">LOG IN</button>              
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUp">SIGN UP</button>           
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div data-scroll-container>
+        <section data-scroll-section id="home">
+          <div class="container pb-5">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <h2 class="headline ps-lg-5 pt-5">Contact</h2>
+                <h1 class="headline ps-lg-5 text-end"><span class="text-primary" style="font-family: 'Baloo Chettan 2', cursive;">Page</span></h1>
+                <p class="ps-lg-5 pt-3 lead">
+                  Welcome to our contact center. At this page you can find the necessary information about Serverspace and fill out the form to contact us.
+                </p>      
+                <div class="row d-md-flex justify-content-between pt-5">
+                  <div class="col-4">
+                    <div class="text-center">
+                      <i class="bi-telephone" style="font-size: 2.5rem; color: #0d6efd;"></i>  
+                      <p class="lead pt-2">09984323684</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="text-center">
+                      <i class="bi-geo-alt" style="font-size: 2.5rem; color: #0d6efd;"></i>  
+                      <p class="lead pt-2">Pinnagbuhatan, Pasig City</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="text-center">
+                      <i class="bi-facebook" style="font-size: 2.5rem; color: #0d6efd;"></i>  
+                      <p class="lead pt-2">Michael Miranda</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">                
+                  <img src="../images/Contact.svg" class="img-fluid">               
+              </div>
+            </div>
+          </div>   
+          <div class="container-fluid bg-light">
+            <div class="container py-5">
+              <div class="row justify-content-md-center">
+                <div class="col-lg-6 thumbnail mb-4 mb-lg-0">
+                  <div class="border border-secondary p-5 pb-2 rounded">
+                    <div class="pb-5 d-flex justify-content-around">
+                      <h3>Send us a message
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                      </h3>
+                    </div>            
+                    <form>
+                      <div class="form-outline mb-4">                 
+                        <label class="form-label" for="form4Example1">Name</label>
+                        <input type="text" id="form4Example1" class="form-control" placeholder="Enter your name"/>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form4Example2">Email address</label>
+                        <input type="email" id="form4Example2" class="form-control" placeholder="Enter your email"/>                  
+                      </div>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form4Example3">Message</label>
+                        <textarea class="form-control" id="form4Example3" rows="5" placeholder="Enter your message here"></textarea>               
+                      </div>
+                      <div class="form-check d-flex justify-content-start mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label" for="form4Example4">
+                          Send me a copy of this message
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-block mb-4 px-4 form-control">SEND</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="embed-responsive h-100">
+                    <iframe class="embed-responsive-item rounded border border-dark " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.4320760388807!2d121.08500733938294!3d14.55752353042866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7d3f3a7b79d%3A0x545213b206969031!2sR%20Cruz%2C%20Pasig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1652341526631!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>    
+              </div>            
+            </div>
+          </div>
+          <div class="container">
+            <div class="row py-5">
+              <h1 class="display-3 text-center">Looking for a quick answer?</h1>
+              <p class="lead text-center pb-5">This will probably help you.</p>  
+              <div class="col-lg-3">
+                <div class="card bg-light text-dark border-dark text-start" style="height: 20rem;">                  
+                  <div class="card-body">
+                    <h5 class="card-title fs-3 text-start">Tutorials</h5>
+                    <p class="card-text">Here you can find configuration instructions, FAQ, popular categories, tips, and tricks for comfortable work with the service.</p>
+                  </div>
+                  <a href="#" class="btn btn-outline-dark m-3">EXPLORE</a>                
+                </div>        
+              </div>   
+              <div class="col-lg-3">
+                <div class="card bg-light text-dark border-dark text-start" style="height: 20rem;">                  
+                  <div class="card-body">
+                    <h5 class="card-title fs-3 text-start">Conditions</h5>
+                    <p class="card-text">This section contains all the legal documentation.</p>
+                  </div>
+                  <a href="#" class="btn btn-outline-dark m-3">EXPLORE</a>                
+                </div>        
+              </div> 
+              <div class="col-lg-3">
+                <div class="card bg-light text-dark border-dark text-start" style="height: 20rem;">                  
+                  <div class="card-body">
+                    <h5 class="card-title fs-3 text-start">For Partners</h5>
+                    <p class="card-text">Learn more about White Label, Referral program and other cooperation opportunities.
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-outline-dark m-3">EXPLORE</a>                
+                </div>        
+              </div>   
+              <div class="col-lg-3">
+                <div class="card bg-light text-dark border-dark text-start" style="height: 20rem;">                  
+                  <div class="card-body">
+                    <h5 class="card-title fs-3 text-start">Infrastructure</h5>
+                    <p class="card-text">In this section, you can find out, which data centers we use, what equipment we use, and how the cloud architecture is arranged in more detail.</p>
+                  </div>
+                  <a href="#" class="btn btn-outline-dark m-3">EXPLORE</a>                
+                </div>        
+              </div>         
+            </div>
+            <div class="row align-items-center pb-5">
+              <h2 class="display-6 text-center">Get in touch</h2>
+              <p class="fw-5 text-center">Want to get in touch? We'd love to hear from you. Here's how to reach us.</p>
+              <div class="col-lg-5 col-md-10 col-sm-10 mx-auto">
+                <div class="d-flex justify-content-between">
+                  <a href="">
+                    <i class="bi-facebook" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                  <a href="">
+                    <i class="bi-twitter" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                  <a href="">
+                    <i class="bi-instagram" style="font-size: 2.5rem; color: black;"></i> 
+                  </a>
+                  <a href="">
+                    <i class="bi-linkedin" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>  
+        <section data-scroll-section class="text-center text-lg-start bg-dark" style="background-color: #000;">
+          <section class="">
+            <div class="container text-center text-md-start">
+              <div class="row py-5">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto my-auto text-center mb-sm-2">
+                  <img src="/images/logo.png" class="img-fluid" alt="" width="50%">
+                  <h6 class="text-primary fw-2 fs-4 footer-title">
+                    cloudboX
+                  </h6>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-sm-2">
+                  <p class="text-white mb-lg-4 mb-sm-0 lead">
+                    PRODUCTS
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">COMPUTE</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">STORAGE</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">NETWORKING</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">SERVICES</a>
+                  </p>
+                </div>
+  
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-sm-2">
+                  <p class="text-white mb-4 lead">
+                    NAVIGATION
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">HOME</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">PRODUCTS</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">ABOUT US</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">CONTACT US</a>
+                  </p>
+                </div>
+  
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
+                  <p class="text-white text-uppercase mb-4 lead">Get the latest news & promos</p>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control" placeholder="Email"/> 
+                    <button type="submit" class="btn btn-primary fw-5 fs-6 form-control my-3 fs-6 py-2">SUBSCRIBE</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="py-2 fs-6 bg-light" style="color: #000;">
+            <div class="container">
+              <div class="row ">
+                <div class="col-lg-6 text-center">
+                  Website created by:
+                <a class="text-reset fs-6" href="https://www.facebook.com/michael.miranda.5245961/">Michael Miranda</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                  © 2022 Copyright:
+                <a class="text-reset fs-6" href="">cloudboX</a>
+                </div>
+              </div>
+            </div>         
+          </div>
+        </section>
+      </div>
+      
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/script/index.js"></script>
+
+</body>
+</html>

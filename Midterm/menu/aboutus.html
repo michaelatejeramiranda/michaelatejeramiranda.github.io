@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Election 2022</title>
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto+Slab:wght@200&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel = "icon" href= "../images/logo.png" />
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    body {
+        background: #f6f6f6;
+    }
+
+    header {
+		background-color: #053baa;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 8px 1%;
+	}
+
+	header h1 {
+		font-size: 3rem;
+		color: #ffffff;
+		font-family: 'Montserrat', sans-serif;
+		cursor: pointer;
+		margin-right: auto;
+        text-align: center;
+        padding-bottom: 10px;
+	}
+
+    img {
+        width: 60px; 
+        max-width: 60px;
+        height: auto;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+	li, a {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		text-decoration: none;
+		color: #c6cdd2;
+		font-size: 1vw;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	ul li {
+		display: inline-block;
+		padding: 0% 15px;
+	}
+
+	ul li a {
+        position: relative;
+        padding: 12px 0%;
+		transition: all 0.3s ease 0s;
+	}
+
+    ul li a::after {
+       content: '';
+       position: absolute;
+       left: 0%;
+       bottom: 0%;
+       width: 100%;
+       height: 0.15rem;
+       background: #ffffff;
+       transform: scale(0, 1);
+       transition: all 0.3s ease 0s;
+	}
+
+    ul li a:hover::after {
+        transform: scale(1, 1);
+    }
+
+    ul li a:hover {
+		color: #ffffff;
+        text-decoration: none;
+	}
+
+    .active,.active::after {
+        color: #ffffff;
+        transform: scale(1, 1);
+    }
+
+    .container-fluid {
+      padding-top: 1.3vw;
+    }
+
+    .con {
+    padding: 15px;
+  }
+  h2 {
+    margin-bottom: 3vw;
+    font-family: 'Montserrat', sans-serif;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 2px;
+  }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.png">
+		<h1 class="vertical-center">PHILIPPINE ELECTION 2022</h1>
+		<nav>
+			<ul>
+			  	<li><a href="../index.html">HOME</a></li>
+		  		<li><a href = "candidate.html">CANDIDATES</a></li>
+          <li><a href= "survey.html">SURVEY</a></li>
+          <li><a href= "contact.html">CONTACT US</a></li>
+			  	<li><a class="active" href= "aboutus.html">ABOUT US</a></li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <img src="../images/voting.svg" style="width: 100%;">
+        </div>
+    </div>
+    <div class="col-md-6">
+      <div class="thumbnail con">
+        <h2>About Us</h2>
+
+        <p>The 2022 Philippine presidential and vice presidential elections are scheduled to be held on Monday, May 9, 2022, as part of the 2022 general election. This will be the 17th direct presidential election and 16th vice presidential election in the Philippines since 1935, and the sixth sextennial presidential and vice presidential election since 1992.
+
+          Incumbent president Rodrigo Duterte is ineligible for re-election as he is limited to a single term, under the 1987 Philippine Constitution. The position of president and vice president are elected separately; the two winning candidates could thus come from different political parties.
+          
+          The 2022 presidential election will be the first where all candidates for president were born after World War II ended.</p>
+        <p>The 2022 elections is a pivotal moment in Philippine history. Leaders elected into office shall be responsible for setting the country on the path to recovery and stability. The decisions and actions of our elected official have a domino effect on the lives of every Filipino.</p>
+        <p>According to the Constitution of the Philippines of 1987, the election is held every six years after 1992, on the second Monday of May. The incumbent president is term-limited. The incumbent vice president may run for two consecutive terms. The first-past-the-post voting system is used to determine the winner: the candidate with the highest number of votes, whether or not one has a majority, wins the presidency. The vice-presidential election is separate, is held on the same rules, and voters may split their ticket. If two or more candidates get the most votes for either position, Congress shall vote from among them which shall be president or vice president, as the case may be.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>

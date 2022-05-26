@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style/menu.css">
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl.theme.default.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Montserrat+Alternates:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+    <title>cloudboX</title>
+    <link rel="icon" href="/images/logo.png" type="image/icon type">
+
+</head>
+<body>
+
+  <div id="login" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 2;"></button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3 class="headline display-4">Hello,</h3>
+                  <h3 class="headline display-5 text-end">WELCOME BACK</h3>
+                  <img src="../images/login.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 position-relative pb-5">
+                  <div class="position-absolute bottom-0 start-0 ms-2">
+                    <a href="" class="text-dark me-1" style="font-size: small;text-decoration: none;">Terms & Conditions</a>
+                    <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Privacy Policy</a>
+                  </div>
+                  <div class="row justify-content-center pt-5">
+                    <img src="/images/logo.png" class="img-fluid" style="width: 5rem;" alt="">
+                  </div>
+                  <div class="row text-center pt-1">
+                    <h1 class="fs-5 footer-title">cloudboX</h1>
+                  </div>
+                  <div class="row text-center pt-3">
+                    <p class="fs-6 text-BLACK">Sign in To Continue</p>
+                  </div>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control my-3" placeholder="Email"/> 
+                    <input type="password" id="form4Example2" class="form-control" placeholder="Password"/> 
+                    <div class="form-check d-flex justify-content-between">
+                      <div class="d-flex justify-content-start">
+                        <input class="form-check-input" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label ms-2" style="font-size: small;" for="form4Example4">
+                          Remember Me
+                        </label>
+                      </div>
+                      <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-control my-3 fs-6 py-2">LOGIN</button>
+                  </form>
+                  <div class="row text-center mb-5">
+                    <a href="" class="text-dark fs-6" style="text-decoration: none;" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#signUp">CREATE AN ACCOUNT</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="signUp" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 2;"></button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3 class="headline display-4 pt-2">Join Us Now</h3>
+                  <p class="lead pt-3">Something big is coming on your way. Join us to get the latest updates as soon as they're released.</p>
+                  <img src="../images/signup2.svg" alt="" class="img-fluid mt-5">
+                </div>
+                <div class="col-lg-6 position-relative">
+                  <div class="position-absolute bottom-0 start-0 ms-2">
+                    <a href="" class="text-dark me-1" style="font-size: small;text-decoration: none;">Terms & Conditions</a>
+                    <a href="" class="text-dark" style="font-size: small;text-decoration: none;">Privacy Policy</a>
+                  </div>
+                  <div class="row justify-content-center pt-5">
+                    <img src="/images/logo.png" class="img-fluid" style="width: 5rem;" alt="">
+                  </div>
+                  <div class="row text-center pt-1">
+                    <h1 class="fs-5 footer-title">cloudboX</h1>
+                  </div>
+                  <div class="row text-center pt-2">
+                    <p class="fs-6 text-BLACK">Sign Up To Continue Shopping</p>
+                  </div>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control mt-3" placeholder="Email"/> 
+                    <input type="password" id="form4Example2" class="form-control my-3" placeholder="Password"/> 
+                    <input type="password" id="form4Example2" class="form-control" placeholder="Repeat Password"/> 
+                    <div class="form-check d-flex justify-content-between">
+                      <div class="d-flex justify-content-start">
+                        <input class="form-check-input" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label ms-2" style="font-size: small;" for="form4Example4">
+                          Remember Me
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-control my-3 fs-6 py-2">SIGN UP</button>
+                  </form>
+                  <div class="row text-center">
+                    <a href="" class="text-dark fs-6" style="text-decoration: none;" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#login">ALREADY HAVE AN ACCOUNT</a>
+                  </div>
+                  <div class="row mb-5 pt-4">
+                    <p style="font-size: small;">Or you can join with</p>
+                    <div class="d-flex justify-content-around">
+                      <a href="">
+                        <i class="bi-facebook" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                      <a href="">
+                        <i class="bi-twitter" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                      <a href="">
+                        <i class="bi-google" style="font-size: 2rem; color: black;"></i> 
+                      </a>
+                      <a href="">
+                        <i class="bi-linkedin" style="font-size: 2rem; color: black;"></i>  
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" id="myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-lg-5 display-lg-1" href="index.html">cloudboX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active-menu"href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+            </ul>
+            <div class="d-flex pe-lg-5 ms-lg-2">
+                <button class="btn btn-outline-primary me-3" data-bs-toggle="modal" data-bs-target="#login">LOG IN</button>              
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUp">SIGN UP</button>           
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div data-scroll-container>
+        <section data-scroll-section id="home">
+          <div class="container pb-5">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <h2 class="headline ps-lg-5 pt-5">About</h2>
+                <h1 class="headline ps-lg-5 text-end"><span class="text-primary" style="font-family: 'Baloo Chettan 2', cursive;">cloudboX</span></h1>
+                <p class="ps-lg-5 pt-3 lead">
+                  We are an international cloud provider expanding opportunities for our customers to create great innovative projects. Our motto is to listen to our customers and do our best to provide the highly reliable, simple, and available cloud infrastructure to everyone.
+                </p>      
+                <div class="row d-md-flex justify-content-between pt-3">
+                  <div class="col-4">
+                    <div class="text-center">
+                      <i class="bi-graph-up-arrow" style="font-size: 2.5rem; color: #0d6efd;"></i>  
+                      <h4 class="headline display-5 fw-bold">10</h4>
+                      <p class="lead">data centers.</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="text-center">
+                      <i class="bi-calendar-heart" style="font-size: 2.5rem; color: #0d6efd;"></i>  
+                      <h4 class="headline display-5 fw-bold">20</h4>
+                      <p class="lead">years on the market</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="text-center">
+                      <i class="bi-person-hearts" style="font-size: 2.5rem; color: #0d6efd;"></i>  
+                      <h4 class="headline display-5 fw-bold">100k+</h4>
+                      <p class="lead">customers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">                
+                  <img src="../images/about2.svg" class="img-fluid">               
+              </div>
+            </div>
+          </div>  
+          <div class="container-fluid bg-dark">
+            <div class="container py-5">
+              <div class="row text-center">
+                <div class="col-lg-3">
+                  <div class="card border-0">
+                    <img src="../images/automated.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Automated</h5>
+                      <p class="card-text">It is easy to modify configurations even after deployment in seconds.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card border-0">
+                    <img src="../images/fast.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Fast</h5>
+                      <p class="card-text">We provide fantastic performance. It is the first of its kind, the unique one.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card border-0">
+                    <img src="../images/reliable.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Reliable</h5>
+                      <p class="card-text">Infrastructure availability is 99.9%. Guaranteed by the agreement.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card border-0">
+                    <img src="../images/affordable.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Affordable</h5>
+                      <p class="card-text">Billing charges by the minute. We make qualility but affordable services.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>           
+            </div>
+          </div>
+          <div class="container">
+            <div class="row pt-5">
+              <h1 class="display-3 text-center">Enjoy <span class="footer-title text-primary">cloudboX</span></h1>
+              <div class="row d-flex justify-content-start">
+                <div class="col-lg-6">
+                  <p class="headline fs-3 fw-bold pt-5">In-house developed vStack platform</p>
+                  <p class="lead text-start">Deploy servers based on the innovative hyper-converged vStack platform. A virtual machine on vStack costs twice as little as an equal machine on VMware.</p> 
+                </div>
+                <div class="col-lg-4">
+                  <img src="../images/about3.svg" class="img-fluid" alt="...">
+                </div>
+              </div>    
+              <div class="row d-flex justify-content-end">
+                <div class="col-lg-4">
+                  <img src="../images/about5.svg" class="img-fluid" alt="...">
+                </div> 
+                <div class="col-lg-6">
+                  <p class="headline fs-3 fw-bold pt-5">Enterprise equipment</p>
+                  <p class="lead text-start">Use the virtual machines with the 2d Gen Intel Xeon Gold Scalable processor with 3,1 GHz. They provide the highest level of virtual machine performance.</p> 
+                </div>                                           
+              </div>          
+              <div class="row d-flex justify-content-start">
+                <div class="col-lg-6">
+                  <p class="headline fs-3 fw-bold pt-5">Pay-as-you-go</p>
+                  <p class="lead text-start">Pay only for the time of actual machine sage. We bill our services every 10 minutes, so you can save money on paying in advance for an extended period.</p> 
+                </div>
+                <div class="col-lg-4">
+                  <img src="../images/about4.svg" class="img-fluid" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="row pt-5">
+              <h1 class="display-3 text-center">Make yourself at home with <span class="footer-title text-primary">cloudboX</span></h1>
+              <p class="lead text-center pb-5">Managing a cloud infrastructure has never been so enjoyable.</p> 
+              <div class="col-2 d-flex align-items-center">
+                <i class="bi-arrow-left-circle customPrevBtn" style="font-size: 3.5rem; color: black;cursor: pointer;"></i> 
+              </div>
+              <div class="col-8">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="container">
+                      <div class="row d-flex justify-content-center">                     
+                        <div class="col-lg-6 bg-dark text-white rounded-start ">
+                          <h1 class="display-2 text-start">Ultrafast Deploy</h1>
+                          <p class="lead text-start pt-3">To reduce the time it takes to deploy VMs, we keep them in a dedicated, renewable pool. When you create a VM, the control panel requests this pool. It reduces the average deployment time to 40 seconds.</p> 
+                        </div>
+                        <div class="col-lg-6 border border-start-0 border-dark rounded-end border-3">
+                          <img src="../images/about1.svg" class="img-fluid" alt="...">
+                        </div>                     
+                      </div>
+                    </div>        
+                  </div>
+                  <div class="item">
+                    <div class="container">
+                      <div class="row d-flex justify-content-center">                     
+                        <div class="col-lg-6 bg-dark text-white rounded-start ">
+                          <h1 class="display-2 text-start">Freeze Protection</h1>
+                          <p class="lead text-start pt-3">A control panel is designed within the Single Page Application architecture. After the first page has been loaded, all pages load instantly, without lag. Focus entirely on your project.</p> 
+                        </div>
+                        <div class="col-lg-6 border border-start-0 border-dark rounded-end border-3">
+                          <img src="../images/about1.svg" class="img-fluid" alt="...">
+                        </div>                     
+                      </div>
+                    </div>  
+                  </div>
+                  <div class="item">
+                    <div class="container">
+                      <div class="row d-flex justify-content-center">                     
+                        <div class="col-lg-6 bg-dark text-white rounded-start ">
+                          <h1 class="display-2 text-start">2FA Guard</h1>
+                          <p class="lead text-start pt-3">We bring you the best options for protecting your control panel. You can set up two-factor authentication via mobile app or SMS, right in the panel settings.</p> 
+                        </div>
+                        <div class="col-lg-6 border border-start-0 border-dark rounded-end border-3">
+                          <img src="../images/about1.svg" class="img-fluid" alt="...">
+                        </div>                     
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 d-flex justify-content-end align-items-center">
+                <i class="bi-arrow-right-circle customNextBtn" style="font-size: 3.5rem; color: black;cursor: pointer;"></i> 
+              </div>
+            </div>
+            <div class="row align-items-center py-5">
+              <h2 class="display-6 text-center">Get in touch</h2>
+              <p class="fw-5 text-center">Want to get in touch? We'd love to hear from you. Here's how to reach us.</p>
+              <div class="col-lg-5 col-md-10 col-sm-10 mx-auto">
+                <div class="d-flex justify-content-between">
+                  <a href="">
+                    <i class="bi-facebook" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                  <a href="">
+                    <i class="bi-twitter" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                  <a href="">
+                    <i class="bi-instagram" style="font-size: 2.5rem; color: black;"></i> 
+                  </a>
+                  <a href="">
+                    <i class="bi-linkedin" style="font-size: 2.5rem; color: black;"></i>  
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>  
+        <section data-scroll-section class="text-center text-lg-start bg-dark" style="background-color: #000;">
+          <section class="">
+            <div class="container text-center text-md-start">
+              <div class="row py-5">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto my-auto text-center mb-sm-2">
+                  <img src="/images/logo.png" class="img-fluid" alt="" width="50%">
+                  <h6 class="text-primary fw-2 fs-4 footer-title">
+                    cloudboX
+                  </h6>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-sm-2">
+                  <p class="text-white mb-lg-4 mb-sm-0 lead">
+                    PRODUCTS
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">COMPUTE</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">STORAGE</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">NETWORKING</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">SERVICES</a>
+                  </p>
+                </div>
+  
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-sm-2">
+                  <p class="text-white mb-4 lead">
+                    NAVIGATION
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">HOME</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">PRODUCTS</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">ABOUT US</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-secondary fw-2 text-decoration-none">CONTACT US</a>
+                  </p>
+                </div>
+  
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
+                  <p class="text-white text-uppercase mb-4 lead">Get the latest news & promos</p>
+                  <form action="" method="post">
+                    <input type="email" id="form4Example2" class="form-control" placeholder="Email"/> 
+                    <button type="submit" class="btn btn-primary fw-5 fs-6 form-control my-3 fs-6 py-2">SUBSCRIBE</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="py-2 fs-6 bg-light" style="color: #000;">
+            <div class="container">
+              <div class="row ">
+                <div class="col-lg-6 text-center">
+                  Website created by:
+                <a class="text-reset fs-6" href="https://www.facebook.com/michael.miranda.5245961/">Michael Miranda</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                  © 2022 Copyright:
+                <a class="text-reset fs-6" href="">cloudboX</a>
+                </div>
+              </div>
+            </div>         
+          </div>
+        </section>
+      </div>
+      
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/script/index.js"></script>
+
+</body>
+</html>
